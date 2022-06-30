@@ -10,6 +10,7 @@ You find below the table and some test values which you can use in order to go q
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 update users set password = crypt('1234567890', gen_salt('bf', 8)  ) 
+CREATE SEQUENCE seq_produkt;
 create table produkt(
 	id_produkt integer default nextval('seq_produkt') not null,
 	name varchar(35) not null,
