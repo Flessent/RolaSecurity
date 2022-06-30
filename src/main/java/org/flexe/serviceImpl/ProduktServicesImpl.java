@@ -72,7 +72,7 @@ return 0; // in case where the save is successful
 	@Override
 	public int deleteProdukt(int idProdukt) {
 		try {
-			produktRepository.deleteProdukt(idProdukt);// deletePersonne() kommt aus  PersonneRepository (Vererbung der PersonneRepository von LehrerRepository)
+			produktRepository.deleteProdukt(idProdukt);
 		return 0;
 		} catch (Exception e) {
 			return 1;
